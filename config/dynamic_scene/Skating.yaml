@@ -1,0 +1,100 @@
+exp_base: ckpt/dynamic_scene/Skating
+random_seed: 0
+
+# Logging
+wandb:
+  project: osn_dynamic_scene
+  name: Skating
+  notes: Basic
+
+# Data
+dataset_type: dynamic_scene
+dataset_name: Skating
+data_root: /media/SSD/ziyang/Datasets_NeRF/Dynamic_Scene/data/Skating
+n_object: 2
+preproc_path: sam_raft
+
+near: 1.
+far: 8.
+
+# TensoRF
+tensorf:
+  N_voxel_init: 2985984 # 144**3
+  N_voxel_final: 46656000 # 360**3
+  upsamp_list: [8000, 12000, 16000, 22000]
+
+  n_lamb_sigma: [ 16,16,16 ]
+  n_lamb_sh: [ 48,48,48 ]
+  data_dim_color: 27
+  distance_scale: 25.0
+  density_shift: -1.0
+  featureC: 128
+
+  shadingMode: MLP_PE
+  fea2denseAct: softplus
+
+  pos_pe: 6
+  view_pe: 2
+  fea_pe: 2
+
+  TV_weight_density: 1.0
+  TV_weight_app: 1.0
+
+  alpha_mask_thre: 0.0001
+
+# OSN
+osn:
+  n_layer: 4
+  n_dim: 64  # 32
+  alpha: 1.
+  shift: 1. # 0.
+
+  n_sample_scale: 4096
+  score_thresh: 0.5
+  acc_thresh_list: [0.98, 0.99]
+  topk_thresh_list: [0.02, 0.01]
+  iters_thresh_list: [1000, 3000]
+
+# Ray & point sampling
+use_ndc: False
+n_sample_ray: 2048
+n_sample_point: 128
+n_sample_point_adjust: True
+step_ratio: 1.0
+n_sample_point_fine: 0
+perturb: True
+
+# Rendering
+white_bkgd: False
+zbuffer_beta: 0.1 # 1.0
+
+# Optical flow
+flow_window_size: 7
+
+# Loss weight
+loss_img_w: 1.0
+loss_depth_w: 1.0
+loss_segm_w: 0.01
+loss_entropy_w: 0.0
+
+loss_depth_weighted: True
+
+# Training
+n_iters: 80000
+n_iters_bootstrap: 1000
+n_alter_round: 5
+n_iters_tensorf: 1000
+n_iters_osn: 1000
+
+lrate: 0.001
+lrate_decay: 0.1
+lrate_decay_step: 200000
+lrate_pose: 0.0
+lrate_decay_pose: 0.0033
+lrate_decay_step_pose: 200000
+lrate_osn: 0.001
+
+val_freq: 500
+save_freq: 5000
+
+chunk_ray: 4096
