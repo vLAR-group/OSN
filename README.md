@@ -1,4 +1,4 @@
-[![arXiv](https://img.shields.io/badge/arXiv-2210.04458-b31b1b.svg)](https://arxiv.org/abs/2210.04458)
+[//]: # ([![arXiv]&#40;https://img.shields.io/badge/arXiv-2210.04458-b31b1b.svg&#41;]&#40;https://arxiv.org/abs/2210.04458&#41;)
 ![code visitors](https://visitor-badge.glitch.me/badge?page_id=vLAR-group/OGC)
 [![License CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC4.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
 [![Twitter Follow](https://img.shields.io/twitter/follow/vLAR_Group?style=social)](https://twitter.com/vLAR_Group)
@@ -8,11 +8,11 @@
 
 ### Overview
 
-We propose the first method to represent all plausible dynamic 3D scene configurations from an input monocular video.
+We propose the first framework to represent dynamic 3D scenes in infinitely many ways from a monocular RGB video.
 
 <img src="figures/overview.jpg" alt="drawing" width=800/>
 
-Our method allows infinitely sampling of different 3D scenes that match the input monocular video in observed views:
+Our method enables infinitely sampling of different 3D scenes that match the input monocular video in observed views:
 
 <img src="figures/01-overview_demo.gif" alt="drawing" width=600/>
 
