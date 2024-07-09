@@ -98,3 +98,6 @@ val_freq: 500
 save_freq: 5000
 
 chunk_ray: 4096
+
+
+print('Good')

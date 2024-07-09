@@ -123,3 +123,6 @@ if __name__ == '__main__':
     transl2 = gt_s * torch.einsum('ij,nj->ni', gt_R, transl1) + gt_t
 
     R_error, t_error, s, R, t = absolute_traj_error(rot1, transl1, rot2, transl2)
+
+
+print('Good')

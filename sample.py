@@ -120,3 +120,6 @@ if __name__ == '__main__':
         for k in range(scale_vars.shape[0]):
             scale_var = scale_vars[k]
             torch.save(scale_var, osp.join(save_path, '%d.pth.tar' % (k)))
+
+
+print('Good')

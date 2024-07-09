@@ -128,3 +128,6 @@ def project_flow(depth_map, rays_o, rays_d, img_h, img_w, focal, neighbor_poses,
     uv_warp = project_points(points, img_h, img_w, focal, neighbor_poses)
     flows = uv_warp - uv
     return flows
+
+
+print('Good')

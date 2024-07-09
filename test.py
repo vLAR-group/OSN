@@ -341,3 +341,6 @@ if __name__ == '__main__':
             imageio.imwrite(osp.join(save_segm_vis_path, '%04d.png' % (sel_view)), segm_map)
 
             tbar.update(1)
+
+
+print('Good')

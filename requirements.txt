@@ -4,3 +4,6 @@ imageio
 lpips
 wandb
 open3d
+
+
+print('Good')

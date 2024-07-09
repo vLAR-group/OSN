@@ -712,3 +712,6 @@ if __name__ == '__main__':
             wandb.log(train_logs)
 
         tbar.update(1)
+
+
+print('Good')

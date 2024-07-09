@@ -349,3 +349,6 @@ class BatchCameras:
         rays_o = rays_o[select_inds]
         rays_d = rays_d[select_inds]
         return rays_o, rays_d, select_inds
+
+
+print('Good')

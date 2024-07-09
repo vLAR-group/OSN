@@ -78,3 +78,6 @@ if __name__ == "__main__":
 
     with open(osp.join(data_root, 'transforms_test.json'), 'w') as fw:
         json.dump(meta_test, fw, indent=4)
+
+
+print('Good')
