@@ -131,6 +131,3 @@ def eval_sh_bases(deg, dirs):
                     result[..., 23] = C4[7] * xz * (xx - 3 * yy);
                     result[..., 24] = C4[8] * (xx * (xx - 3 * yy) - yy * (3 * xx - yy));
     return result
-
-
-print('Good')

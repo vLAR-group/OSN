@@ -9,6 +9,3 @@ __pycache__/
 .idea
 
 ckpt/
-
-
-print('Good')

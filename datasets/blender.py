@@ -109,6 +109,3 @@ class BlenderDataset(Dataset):
             flows.append(flow)
             sid2_list.append(sid2)
         return np.stack(flows, 0), sid2_list
-
-
-print('Good')

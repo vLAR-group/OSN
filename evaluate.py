@@ -356,6 +356,3 @@ if __name__ == '__main__':
     else:
         with open(osp.join(args.render_path, 'metrics_%s.txt'%(args.split)), 'w') as f:
             f.write(str(metric))
-
-
-print('Good')

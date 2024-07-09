@@ -22,6 +22,3 @@ class ObjectScaleNet(nn.Module):
         x = self.layers[-1](x)
         prob = F.sigmoid(self.alpha * x + self.shift)
         return prob
-
-
-print('Good')

@@ -164,6 +164,3 @@ def vis_ray(rays_o, rays_d, z=1., color=[1., 0., 0.]):
     pcd_ray = pcd_ray.create_from_point_cloud_correspondences(start_point, end_point, corr)
     pcd_ray.paint_uniform_color(color)
     return pcd_ray
-
-
-print('Good')

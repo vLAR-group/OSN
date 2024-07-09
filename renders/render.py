@@ -112,6 +112,3 @@ def nerf_render(rays,
                 'entropy': entropy}
 
     return ret_dict
-
-
-print('Good')
