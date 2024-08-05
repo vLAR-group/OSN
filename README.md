@@ -19,7 +19,7 @@ Our method enables infinitely sampling of different 3D scenes that match the inp
 
 ### [Full demo (Youtube)](https://www.youtube.com/watch?v=LQjRLq39UFg)
 
-<p align="center"> <a href="https://www.youtube.com/watch?v=dZBjvKWJ4K0"><img src="figures/OSN_coverpage.jpg" width=500></a> </p>
+<p align="center"> <a href="https://www.youtube.com/watch?v=LQjRLq39UFg"><img src="figures/OSN_coverpage.jpg" width=500></a> </p>
 
 
 ## 1. Environment
